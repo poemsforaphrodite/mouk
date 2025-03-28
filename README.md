@@ -17,23 +17,40 @@ Before running the application, make sure you have the following installed on yo
 
 1. Python 3.8 or higher
 2. pip (Python package installer)
+3. Git (Download from https://git-scm.com/downloads)
 
 ## Installation
 
-1. Clone or download this repository to your local machine.
+### Getting the Code
 
-2. Open Command Prompt as administrator and navigate to the project directory:
+1. Open Command Prompt and clone the repository:
 ```cmd
-cd path\to\project\folder
+git clone https://github.com/poemsforaphrodite/mouk.git
+cd rapid-visual-screening
 ```
 
-3. Create a virtual environment (recommended):
+Alternatively, you can:
+- Download the ZIP file from the repository
+- Extract it to your desired location
+- Open Command Prompt and navigate to the extracted folder
+
+### Setting up the Environment
+
+1. Create a virtual environment (recommended):
 ```cmd
 python -m venv venv
-venv\Scripts\activate
 ```
 
-4. Install the required packages:
+2. Activate the virtual environment:
+```cmd
+# On Windows:
+venv\Scripts\activate
+
+# On macOS/Linux:
+source venv/bin/activate
+```
+
+3. Install the required packages:
 ```cmd
 pip install PySimpleGUI pandas openpyxl
 ```
